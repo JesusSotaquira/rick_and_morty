@@ -17,7 +17,7 @@ const Form = ({login}) =>{
 
       setErrors(validation({
          ...userData,
-         [event.target.name]: event.target.name
+         [event.target.name]: event.target.value
    }))
    }
 
