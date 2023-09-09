@@ -1,5 +1,7 @@
 import { useState } from "react";
 import validation from "../Validation/validation";
+import './Form.css';
+
 
 const Form = ({login}) =>{
    
@@ -41,7 +43,8 @@ const Form = ({login}) =>{
                <input type="password" name="password" value={userData.password} onChange={handleChange} />
                {errors.password && <p>{errors.password}</p>}
             </div>
-               <button>submit</button>
+                       
+           <button>submit</button>
          </form>
     )
 }
