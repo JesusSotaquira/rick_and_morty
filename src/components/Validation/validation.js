@@ -10,7 +10,7 @@ const validation = (userData) => {
     }
 
     if (!/^(?=.*\d)[A-Za-z\d]{6,10}$/.test(userData.password)) {
-        errors.password = 'La contraseña debe tener entre 6 y 10 caracteres y al menos un número.';
+        errors.password = '(ง︡'-'︠)ง La contraseña debe tener entre 6 y 10 caracteres y al menos un número.';
     }
 
     return errors;

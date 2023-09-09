@@ -10,3 +10,11 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed;
 }
+html {
+   overflow-y: scroll; /* Esto asegura que la barra esté siempre presente */
+}
+.mi-componente-scrollable {
+   height: 400px;
+   overflow-y: auto;
+}
+

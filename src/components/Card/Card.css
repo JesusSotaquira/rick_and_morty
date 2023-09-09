@@ -9,11 +9,15 @@
     position: relative;
     overflow: hidden;
     background-color: #e6f7ff;
-    color: #000;  
+    color: #000; 
+    max-width: 250px; 
+    border: 2px solid black; 
+    background-color: rgba(230, 247, 255, 0.4); 
 }
 
 .card-container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .card-container button {
