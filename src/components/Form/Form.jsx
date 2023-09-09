@@ -2,8 +2,7 @@ import { useState } from "react";
 import validation from "../Validation/validation";
 import './Form.css';
 
-
-const Form = ({login}) =>{
+const Form = ({login}) => {
    
    const [errors, setErrors] = useState({});
    const [userData, setUserData] = useState({ 
@@ -11,7 +10,7 @@ const Form = ({login}) =>{
       password: '' 
    });
 
-   const handleChange = (event) =>{
+   const handleChange = (event) => {
       setUserData({
          ...userData,
          [event.target.name]: event.target.value
@@ -23,13 +22,13 @@ const Form = ({login}) =>{
    }))
    }
 
-   const handleSubmit = (event) =>{
+   const handleSubmit = (event) => {
       event.preventDefault();
       login(userData);
    }
 
-    return (
-
+   return (
+      <div className="loginBackground">
          <form onSubmit={handleSubmit}>
             <div>
                <label htmlFor="email">email</label>
@@ -46,7 +45,8 @@ const Form = ({login}) =>{
                        
            <button>submit</button>
          </form>
-    )
+      </div>
+   )
 }
 
 export default Form;

@@ -5,17 +5,18 @@ import './Nav.css';
 
 const Nav = ({onSearch}) => {
     return (
-        <div>
+        <div className="navContainer"> 
             <SearchBar onSearch={onSearch}/>
 
             <Link to="/about">
-            <button>About</button>
+                <button>About</button>
             </Link>
             <Link to="/home">
-            <button>Home</button>
+                <button>Home</button>
             </Link>
         </div>
     )
 }
+
 
 export default Nav;

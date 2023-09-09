@@ -1,21 +1,30 @@
-body {
+.loginBackground {
     font-family: 'Arial', sans-serif;
-    background-color: #282c36; /* Fondo oscuro */
+    background-image: url('https://w.wallhaven.cc/full/4g/wallhaven-4g655e.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
     color: white;
+    overflow-y: hidden;
+    background-size: cover;
 }
+
 
 form {
     max-width: 400px;
     padding: 20px;
-    margin: 50vh auto;  /* Centrar verticalmente */
-    transform: translateY(-50%); /* Ajuste para centrar exactamente */
-    background-color: #444c5c; /* Fondo del formulario */
+    margin: 50vh auto;
+    transform: translateY(-50%);
+    background-color: rgba(144, 238, 144, 0.85);  /* Verde claro con transparencia */
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 div {
     margin-bottom: 15px;
+    padding-right: 10px;  /* Agregado para dar un poco más de espacio a la derecha */
 }
 
 label {
@@ -28,7 +37,10 @@ input[type="email"], input[type="password"] {
     padding: 10px;
     border: none;
     border-radius: 4px;
+    box-sizing: border-box; /* Asegurarse de que el padding no expanda el input */
 }
+
+
 
 button {
     background-color: #1db954;  /* Color de fondo del botón */

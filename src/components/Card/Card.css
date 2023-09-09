@@ -1,0 +1,52 @@
+.card-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px;
+    transition: transform 0.2s;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e6f7ff;
+    color: #000;  
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+}
+
+.card-container button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 4px;  /* Reducido para dar forma cuadrada */
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Asegurar que no haya padding extra */
+    font-size: 14px; /* Ajustar el tamaño del texto si es necesario */
+    line-height: 24px;
+}
+
+.card-container h2 {
+    margin-bottom: 10px;
+}
+
+.card-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: #333;
+}
+
