@@ -1,4 +1,4 @@
-.card-container {
+/*.card-container {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -27,15 +27,15 @@
     background: red;
     border: none;
     color: white;
-    border-radius: 4px;  /* Reducido para dar forma cuadrada */
+    border-radius: 4px;  
     width: 24px;
     height: 24px;
     line-height: 24px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 0; /* Asegurar que no haya padding extra */
-    font-size: 14px; /* Ajustar el tamaño del texto si es necesario */
+    padding: 0; 
+    font-size: 14px; 
     line-height: 24px;
 }
 
@@ -53,4 +53,4 @@
     text-decoration: none;
     color: #333;
 }
-
+ */

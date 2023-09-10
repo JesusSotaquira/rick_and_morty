@@ -1,7 +1,7 @@
 .App {
    text-align: center;
 }
-body {
+/* body {
    margin: 0;
    padding: 0;
    background-image: url('https://w.wallhaven.cc/full/dp/wallhaven-dprooo.jpg');
@@ -9,12 +9,13 @@ body {
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: fixed;
-}
-html {
-   overflow-y: scroll; /* Esto asegura que la barra esté siempre presente */
+} 
+
+   html {
+   overflow-y: scroll; 
 }
 .mi-componente-scrollable {
    height: 400px;
-   overflow-y: auto;
-}
-
+   overflow-y: auto; 
+}  
+*/
