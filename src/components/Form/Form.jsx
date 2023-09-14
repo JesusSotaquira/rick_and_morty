@@ -32,7 +32,8 @@ const Form = ({login}) => {
          <form onSubmit={handleSubmit}>
             <div>
                <label htmlFor="email">email</label>
-               <input type="email" name="email" value={userData.email} onChange={handleChange}/>
+               <label htmlFor="email">email</label>
+               <input id="email" type="email" name="email" value={userData.email} onChange={handleChange}/>
                {errors.email && <p>{errors.email}</p>}
             </div>
                

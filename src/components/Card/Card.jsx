@@ -36,6 +36,7 @@ function Card({ id, name, status, species, gender, origin, image, onClose, addFa
          <h2>{gender}</h2>
          <h2>{origin}</h2>
          <img src={image} alt='' />
+         
          {isFav ? (
             <button onClick={handleFavorite}>❤️</button>
          ) : (

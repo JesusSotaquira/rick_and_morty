@@ -1,14 +1,15 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Routes, Route } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './App.css';
 import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav.jsx'
 import About from './components/About/About'; 
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Routes, Route } from 'react-router-dom';
-import { useLocation, useNavigate } from 'react-router-dom';
-import favorites from './components/Favorites/favorites';
+import Favorites from './components/Favorites';
+
 
 
 
@@ -58,7 +59,7 @@ function App() {
             <Route path='/home' element={<Cards characters= {characters} onClose={onClose} />} />
             <Route path='/about' element={<About/>}/>
             <Route path='/detail/:id' element={<Detail/>}/>
-            <Route path='/favorites' element={<favorites/>}/>
+            <Route path='/favorites' element={<Favorites/>}/>
          </Routes>
       </div>
    );
