@@ -2,20 +2,24 @@ import React from 'react';
 import { connect, useDispatch } from 'react-redux';
 import Card from '../Card/Card';
 import { filterCards, orderCards } from '../../redux/actions';
+import { useState } from 'react';
 
 const Favorites = ({ myFavorites }) => {
 
+    const [aux, setAux] = useState(false);
     const dispatch = useDispatch ();
     const removeFromFavorites = (id) => {
-        
     };
+
     const handleOrder = (event) =>{
-        dispatch(orderCards(event.targer.value));
+        dispatch(orderCards(event.targer.value)),
+        setAux(true);
     }
 
     const handleFilter = (event) => {
         dispatch(filterCards(event.target.value))
-    }
+        
+    };
 
     return (
         <div>
