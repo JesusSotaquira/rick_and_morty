@@ -11,22 +11,22 @@ const Favorites = ({ myFavorites }) => {
     const removeFromFavorites = (id) => {
     };
 
-    const handleOrder = (event) =>{
-        dispatch(orderCards(event.targer.value)),
+    const handleOrder = (event) => {
+        dispatch(orderCards(event.target.value));
         setAux(true);
     }
 
     const handleFilter = (event) => {
-        dispatch(filterCards(event.target.value))
+        dispatch(filterCards(event.target.value));
         
-    };
+    }
 
     return (
         <div>
 
         <select onChange={handleOrder}>
-            <option value="Ascendente">Ascendente</option>
-            <option value="descendente">descendente</option>
+            <option value="A">Ascendente</option>
+            <option value="D">Descendente</option>
         </select>
 
         <select onChange={handleFilter}>
