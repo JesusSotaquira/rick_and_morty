@@ -1,6 +1,6 @@
-/*import React from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import Card from './Card/Card';
+import Card from '../Card/Card';
 
 const Favorites = (props) => {
     const { myFavorites } = props;  
@@ -35,4 +35,4 @@ const mapStateToProps = state => ({
     myFavorites: state.myFavorites
 });
 
-export default connect(mapStateToProps)(Favorites);  */
+export default connect(mapStateToProps)(Favorites);  

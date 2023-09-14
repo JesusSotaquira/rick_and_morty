@@ -8,7 +8,7 @@ import Nav from './components/Nav/Nav.jsx'
 import About from './components/About/About'; 
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
-import Favorites from './components/Favorites';
+import Favorites from './components/Favorites/Favorites';
 
 
 
