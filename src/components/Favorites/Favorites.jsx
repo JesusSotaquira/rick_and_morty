@@ -11,7 +11,7 @@ const Favorites = (props) => {
 
     return (
         <div>
-            Aquí estarán tus personajes favoritos.
+            Personajes Favoritos.
             {
                 myFavorites && myFavorites.map(character => (
                     <Card 
